@@ -31,16 +31,14 @@ nav{
 }
 
 .nav-links li{
-    width: 20%;
+    flex: 1;
 } 
 
  .nav-links a{
     text-transform: uppercase;
     display: flex;
-    /*display: block;*/
     padding: 15px; 
     justify-content: space-around;
-    /*text-align: center;*/
     color: rgb(243, 223, 223);
     text-decoration: none;
 } 
@@ -50,12 +48,13 @@ nav{
     list-style: none;
     display: none;
     flex-direction: column;
-    width: 20%;
+    width: 22%;
     background-color: rgb(111, 90, 250);
 }
 
 .nav-links li:hover{
     font-weight: bold;
+    background-color: violet;
 }
 
 .dropdown-content li{
@@ -75,6 +74,7 @@ nav{
         display: none;
     }
     .nav-links{
+        flex-direction: column;
         width: 100%;
     }
     .nav-links li{
